@@ -12,7 +12,8 @@ body {
 }
 
 .main-pg {
-  background-image: url("./assets/assets/main-bg.jpg");
+  background-image: linear-gradient(to bottom, transparent 60%, black 100%),
+    url("./assets/assets/main-bg.jpg");
   background-position: top;
   background-size: cover;
   background-position: center;
@@ -20,37 +21,11 @@ body {
   background-color: #080a0b;
   height: 100vh;
 }
-
-/* .main-pg {
-  background-image: url("/assets/assets/main-bg.jpg");
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .masthead {
   padding-top: 20.5rem;
   padding-bottom: 6rem;
   text-align: center;
 }
-/* 
-@font-face {
-  font-family: "Bebas Neue";
-  src: url(`BebasNeue-Regular.TTF`);
-} 
-
-@font-face {
-  font-family: "Open Sans";
-  src:url()
-} */
-
 h1 {
   font-family: "Bebas Neue", cursive;
   color: white;
@@ -121,7 +96,13 @@ li {
 .games-choice {
   min-height: 100vh;
   width: 100%;
-  background-image: url("/assets/assets/the-games-bg.jpg");
+  background-image: linear-gradient(
+      black 0%,
+      transparent 20%,
+      transparent 90%,
+      black 100%
+    ),
+    url("/assets/assets/the-games-bg.jpg");
   background-size: cover;
   padding-top: 200px;
   background-position: center;
@@ -145,7 +126,13 @@ li {
 .games-feature {
   min-height: 100vh;
   width: 100%;
-  background-image: url("/assets/assets/features.jpg");
+  background-image: linear-gradient(
+      black 0%,
+      transparent 20%,
+      transparent 90%,
+      black 100%
+    ),
+    url("/assets/assets/features.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,7 +169,13 @@ li {
 .sys-req {
   min-height: 100vh;
   width: 100%;
-  background-image: url("/assets/assets/requirements.png");
+  background-image: linear-gradient(
+      black 0%,
+      transparent 20%,
+      transparent 90%,
+      black 100%
+    ),
+    url("/assets/assets/requirements.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -222,7 +215,13 @@ li {
 .top-scores {
   min-height: 100vh;
   width: 100%;
-  background-image: url("/assets/assets/top-score-bg.png");
+  background-image: linear-gradient(
+      black 0%,
+      transparent 20%,
+      transparent 90%,
+      black 100%
+    ),
+    url("/assets/assets/top-score-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -279,38 +278,16 @@ li {
   color: #878888;
 }
 
-/*Top Scores*/
-
-/* @media (max-width: 1199.98px) {
-  .main-pg,
-  .games-choice,
-  .games-feature,
-  .sys-req {
-    width: 117%;
-    height: 100vh;
-  }
-
-  .container-tg {
-    width: 1000px;
-  }
-  .carousel {
-    margin-left: 0px;
-  }
-  .games-choice {
-    padding-top: 100px;
-  }
-  .carousel-inner > .carousel-item > img {
-    width: 400px;
-    height: 320px;
-  }
-} */
-
-/*Footer*/
-
 .footer {
   min-height: 100vh;
   width: 100%;
-  background-image: url("/assets/assets/top-score-bg.png");
+  background-image: linear-gradient(
+      black 0%,
+      transparent 20%,
+      transparent 90%,
+      black 100%
+    ),
+    url("/assets/assets/top-score-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -369,10 +346,6 @@ hr {
   width: 1200px;
   margin: auto;
 }
-
-/* .flex-foot-left {
-  padding-left: 75px;
-} */
 
 .footer-bot,
 .footer-bottom {
