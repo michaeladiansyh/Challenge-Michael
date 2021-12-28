@@ -459,6 +459,11 @@ ul.terms > li {
 /*Footer*/
 
 @media (max-width: 1199.98px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .tg-left {
     width: 300px;
   }
@@ -514,6 +519,11 @@ ul.terms > li {
 }
 
 @media (max-width: 991.98px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .left-list {
     margin-left: 0;
   }
@@ -577,7 +587,20 @@ ul.terms > li {
   }
 }
 
+@media (max-width: 900px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: 767.98px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .container-tg {
     width: 650px;
   }
@@ -692,6 +715,11 @@ ul.terms > li {
 }
 
 @media (max-width: 575.98px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .custom-sm > h1 {
     letter-spacing: 10px;
   }
