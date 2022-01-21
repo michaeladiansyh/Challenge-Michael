@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="/style-games-page.css" rel="stylesheet" />
+    <link href="/modal.css" rel="stylesheet" />
+    <title id="title-games">ROCK PAPER SCISSORS</title>
+  </head>
+  <body>
+    <!--Navigation to go back to main page-->
+    <ul class="nav">
+      <li class="nav-item">
+        <a
+          class="nav-link active back-page"
+          aria-current="page"
+          href="index.html"
+          ><</a
+        >
+      </li>
+      <li class="nav-item">
+        <img
+          src="/assets/assets/logo-games.svg"
+          alt="games-page-logo"
+          class="games-logo"
+        />
+      </li>
+      <li class="nav-item">
+        <p>ROCK PAPER SCISSORS</p>
+      </li>
+    </ul>
+    <!--Navigation to go back to main page-->
+
+    <!--Container Main for Rock Paper Scissors Games-->
+    <div class="container">
+      <div class="row">
+        <div class="col col-md col-lg"><p>PLAYER 1</p></div>
+        <div class="col"><p>COM</p></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="/assets/assets/batu.png"
+            alt="Batu Player"
+            class="batu choice"
+            id="rock-player"
+          />
+        </div>
+        <div class="col choice-com">
+          <img src="/assets/assets/batu.png" alt="Batu COM" class="batu" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col kertas-player">
+          <img
+            src="/assets/assets/kertas.png"
+            alt="Kertas Player"
+            class="kertas choice"
+            id="kertas-player"
+          />
+        </div>
+        <div class="col vs"><p>VS</p></div>
+        <div class="col kertas-com choice-com" id="kertas-com">
+          <img
+            src="/assets/assets/kertas.png"
+            alt="Kertas COM"
+            class="kertas"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="/assets/assets/gunting.png"
+            alt="Gunting Player"
+            class="gunting choice"
+            id="scissors-player"
+          />
+        </div>
+        <div class="col choice-com" id="scissors-com">
+          <img
+            src="/assets/assets/gunting.png"
+            alt="Gunting COM"
+            class="gunting"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="/assets/assets/refresh.png"
+            alt="Refresh Button"
+            id="refresh"
+          />
+        </div>
+      </div>
+    </div>
+    <!--Container Main for Rock Paper Scissors Games-->
+
+    <!-- Modal for result games -->
+    <div class="modal">
+      <div id="result" class="modal-content"></div>
+    </div>
+    <!-- Modal for result games -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/games-suit.js"></script>
+  </body>
+</html>
