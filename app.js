@@ -67,30 +67,18 @@ function getComChoice() {
     rock_com.style.borderRadius = "40%";
     paper_com.removeAttribute("style");
     scissors_com.removeAttribute("style");
-    /* paper_com.style.backgroundColor = "transparent";
-    scissors_com.style.backgroundColor = "transparent";
-    paper_com.style.border = "transparent";
-    scissors_com.style.border = "transparent"; */
   } else if (randomNumber == 1) {
     paper_com.style.border = "3px solid #531345";
     paper_com.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
     paper_com.style.borderRadius = "40%";
     rock_com.removeAttribute("style");
     scissors_com.removeAttribute("style");
-    /* rock_com.style.backgroundColor = "transparent";
-    scissors_com.style.backgroundColor = "transparent";
-    rock_com.style.border = "transparent";
-    scissors_com.style.border = "transparent"; */
   } else {
     scissors_com.style.border = "3px solid #531345";
     scissors_com.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
     scissors_com.style.borderRadius = "40%";
     paper_com.removeAttribute("style");
     rock_com.removeAttribute("style");
-    /* paper_com.style.backgroundColor = "transparent";
-    rock_com.style.backgroundColor = "transparent";
-    paper_com.style.border = "transparent";
-    rock_com.style.border = "transparent"; */
   }
   return choices[randomNumber];
 }
