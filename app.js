@@ -1,18 +1,5 @@
-const rock_player = document.getElementById("rock-player");
-const paper_player = document.getElementById("paper-player");
-const scissors_player = document.getElementById("scissors-player");
-
-const rock_com = document.getElementById("rock-com");
-const paper_com = document.getElementById("paper-com");
-const scissors_com = document.getElementById("scissors-com");
-
-const player_win = document.getElementById("player-win");
-const draw_text = document.getElementById("draw");
-const computer_win = document.getElementById("computer-win");
-const vsText = document.getElementById("vs");
-
 const refresh1 = document.getElementById("refresh");
-/* 
+
 class Player {
   constructor(batu, kertas, gunting) {
     this.batu = batu;
@@ -52,56 +39,56 @@ const computer1 = new Computer(
 
 const result1 = new Result(
   document.querySelector("#vs"),
-  document.querySelector("#rock-com"),
-  document.querySelector("#paper-com"),
-  document.querySelector("#scissors-com")
-); */
+  document.querySelector("#player-win"),
+  document.querySelector("#computer-win"),
+  document.querySelector("#draw")
+);
 
 function getComChoice() {
   const choices = ["rock", "paper", "scissors"];
   const randomNumber = Math.trunc(Math.random() * 3);
 
   if (randomNumber == 0) {
-    rock_com.style.border = "3px solid #531345";
-    rock_com.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-    rock_com.style.borderRadius = "40%";
-    paper_com.removeAttribute("style");
-    scissors_com.removeAttribute("style");
+    computer1.batu.style.border = "3px solid #531345";
+    computer1.batu.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    computer1.batu.style.borderRadius = "40%";
+    computer1.kertas.removeAttribute("style");
+    computer1.gunting.removeAttribute("style");
   } else if (randomNumber == 1) {
-    paper_com.style.border = "3px solid #531345";
-    paper_com.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-    paper_com.style.borderRadius = "40%";
-    rock_com.removeAttribute("style");
-    scissors_com.removeAttribute("style");
+    computer1.kertas.style.border = "3px solid #531345";
+    computer1.kertas.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    computer1.kertas.style.borderRadius = "40%";
+    computer1.batu.removeAttribute("style");
+    computer1.gunting.removeAttribute("style");
   } else {
-    scissors_com.style.border = "3px solid #531345";
-    scissors_com.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-    scissors_com.style.borderRadius = "40%";
-    paper_com.removeAttribute("style");
-    rock_com.removeAttribute("style");
+    computer1.gunting.style.border = "3px solid #531345";
+    computer1.gunting.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    computer1.gunting.style.borderRadius = "40%";
+    computer1.kertas.removeAttribute("style");
+    computer1.batu.removeAttribute("style");
   }
   return choices[randomNumber];
 }
 
 function win(playerHand, comHand) {
-  player_win.style.display = "block";
-  draw_text.style.display = "none";
-  computer_win.style.display = "none";
-  vsText.style.display = "none";
+  result1.win.style.display = "block";
+  result1.draw.style.display = "none";
+  result1.lose.style.display = "none";
+  result1.text.style.display = "none";
   console.log(`Player : ${playerHand} VS Computer : ${comHand}`);
 }
 function draw(playerHand, comHand) {
-  player_win.style.display = "none";
-  draw_text.style.display = "block";
-  computer_win.style.display = "none";
-  vsText.style.display = "none";
+  result1.win.style.display = "none";
+  result1.draw.style.display = "block";
+  result1.lose.style.display = "none";
+  result1.text.style.display = "none";
   console.log(`Player : ${playerHand} VS Computer : ${comHand}`);
 }
 function lose(playerHand, comHand) {
-  player_win.style.display = "none";
-  vsText.style.display = "none";
-  draw_text.style.display = "none";
-  computer_win.style.display = "block";
+  result1.win.style.display = "none";
+  result1.draw.style.display = "none";
+  result1.lose.style.display = "block";
+  result1.text.style.display = "none";
   console.log(`Player : ${playerHand} VS Computer : ${comHand}`);
 }
 
@@ -125,43 +112,43 @@ function play(playerHand) {
 }
 
 function main() {
-  rock_player.addEventListener("click", function () {
+  player1.batu.addEventListener("click", function () {
     play("rock");
-    rock_player.style.border = "3px solid #531345";
-    rock_player.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-    rock_player.style.borderRadius = "40%";
-    paper_player.removeAttribute("style");
-    scissors_player.removeAttribute("style");
+    player1.batu.style.border = "3px solid #531345";
+    player1.batu.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    player1.batu.style.borderRadius = "40%";
+    player1.kertas.removeAttribute("style");
+    player1.gunting.removeAttribute("style");
   });
-  paper_player.addEventListener("click", function () {
+  player1.kertas.addEventListener("click", function () {
     play("paper");
-    paper_player.style.border = "3px solid #531345";
-    paper_player.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-    paper_player.style.borderRadius = "40%";
-    rock_player.removeAttribute("style");
-    scissors_player.removeAttribute("style");
+    player1.kertas.style.border = "3px solid #531345";
+    player1.kertas.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    player1.kertas.style.borderRadius = "40%";
+    player1.batu.removeAttribute("style");
+    player1.gunting.removeAttribute("style");
   });
-  scissors_player.addEventListener("click", function () {
+  player1.gunting.addEventListener("click", function () {
     play("scissors");
-    scissors_player.style.border = "3px solid #531345";
-    scissors_player.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-    scissors_player.style.borderRadius = "40%";
-    paper_player.removeAttribute("style");
-    rock_player.removeAttribute("style");
+    player1.gunting.style.border = "3px solid #531345";
+    player1.gunting.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    player1.gunting.style.borderRadius = "40%";
+    player1.kertas.removeAttribute("style");
+    player1.batu.removeAttribute("style");
   });
 }
 
 main();
 
 refresh1.addEventListener("click", () => {
-  rock_player.removeAttribute("style");
-  rock_com.removeAttribute("style");
-  paper_player.removeAttribute("style");
-  paper_com.removeAttribute("style");
-  scissors_player.removeAttribute("style");
-  scissors_com.removeAttribute("style");
-  player_win.removeAttribute("style");
-  computer_win.removeAttribute("style");
-  draw_text.removeAttribute("style");
-  vsText.style.display = "block";
+  player1.batu.removeAttribute("style");
+  computer1.batu.removeAttribute("style");
+  player1.kertas.removeAttribute("style");
+  computer1.kertas.removeAttribute("stylee");
+  player1.gunting.removeAttribute("style");
+  computer1.gunting.removeAttribute("style");
+  result1.win.removeAttribute("style");
+  result1.draw.removeAttribute("style");
+  result1.lose.removeAttribute("style");
+  result1.text.style.display = "block";
 });
