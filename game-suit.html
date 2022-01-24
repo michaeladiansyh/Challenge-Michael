@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="/game-suit.css" rel="stylesheet" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <!--Navigation to go back to main page-->
+    <ul class="nav">
+      <li class="nav-item">
+        <a
+          class="nav-link active back-page"
+          aria-current="page"
+          href="index.html"
+          ><</a
+        >
+      </li>
+      <li class="nav-item">
+        <img
+          src="/assets/assets/logo-games.svg"
+          alt="games-page-logo"
+          class="games-logo"
+        />
+      </li>
+      <li class="nav-item">
+        <p>ROCK PAPER SCISSORS</p>
+      </li>
+    </ul>
+    <!--Navigation to go back to main page-->
+
+    <section class="game-content">
+      <div class="container">
+        <!--Firs Row containing Text description -->
+        <div class="row">
+          <div class="col col-md col-lg">
+            <h1>Player</h1>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col col-md col-lg">
+            <h1>COMPUTER</h1>
+          </div>
+        </div>
+        <!--Firs Row containing Text description -->
+
+        <!--Second Row Image for Rock -->
+        <div class="row">
+          <div class="col btn-img">
+            <img
+              src="/assets/assets/batu.png"
+              alt="Rock Player"
+              class="choice clickable"
+              id="rock-player"
+            />
+          </div>
+          <div class="col"></div>
+          <div class="col btn-img">
+            <img
+              src="/assets/assets/batu.png"
+              alt="Rock Computer"
+              class="choice"
+              id="rock-com"
+            />
+          </div>
+        </div>
+        <!--Second Row Image for Rock -->
+
+        <!--Third Row Image for Paper and VS text -->
+        <div class="row">
+          <div class="col btn-img-cust">
+            <img
+              src="/assets/assets/kertas.png"
+              alt="Kertas Player"
+              class="choice-cust clickable"
+              id="paper-player"
+            />
+          </div>
+          <div class="col">
+            <div class="vs" id="vs">
+              <p>VS</p>
+            </div>
+            <div class="result">
+              <p id="player-win">PLAYER WIN</p>
+            </div>
+            <div class="result">
+              <p id="draw">DRAW</p>
+            </div>
+            <div class="result">
+              <p id="computer-win">COMPUTER WIN</p>
+            </div>
+          </div>
+          <div class="col btn-img-cust">
+            <img
+              src="/assets/assets/kertas.png"
+              alt="Paper Computer"
+              class="choice-cust"
+              id="paper-com"
+            />
+          </div>
+        </div>
+        <!--Third Row Image for Paper and VS text -->
+        <!--Row for Scissors-->
+        <div class="row">
+          <div class="col btn-img">
+            <img
+              src="/assets/assets/gunting.png"
+              alt="Scissors Player"
+              class="choice-cust clickable"
+              id="scissors-player"
+            />
+          </div>
+          <div class="col"></div>
+          <div class="col btn-img">
+            <img
+              src="/assets/assets/gunting.png"
+              alt="Scissors Computer"
+              class="choice-cust"
+              id="scissors-com"
+            />
+          </div>
+        </div>
+        <!--Row for Scissors-->
+        <!--Refresh Button Row-->
+        <div class="row">
+          <div class="col">
+            <img
+              src="/assets/assets/refresh.png"
+              alt="Refresh Button"
+              class="refresh clickable"
+              id="refresh"
+            />
+          </div>
+        </div>
+        <!--Refresh Button Row-->
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
